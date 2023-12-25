@@ -57,34 +57,37 @@
  
  Incase of any ERRORS skip the next steps, kindly follow **6.NOTE & 7.SOLUTION** (specific to those errors only)
 	
- 	• C:\Users\abc\Downloads\mage\mageai>pip freeze > requirements.txt
+	• C:\Users\abc\Downloads\mage\mageai>mage init new_proj
+ 
+ **(to initiate a project)**:
+
+ 	• C:\Users\abc\Downloads\mage\mageai>pip freeze > new_proj/requirements.txt
+
+ **(to save project dependencies to requirements.txt file)**:
+
 	• C:\Users\abc\Downloads\mage\mageai>mage start metro_proj 
  
- **(to start a project)**: (project starts on PORT 6789 / localhost:6789)
+ **(to launch project localhost on PORT 6789 / localhost:6789)**
 
-# OPTIONAL:
-	
+ 
 	• C:\Users\abc\Downloads\mage\mageai>mage init new_proj 
- 
- **(to create a new project)**
-	
- 	• C:\Users\abc\Downloads\mage\mageai>mage start new_proj 
- 
- **(to start a project)**
- 
+
+ **(to create/initialise a new project)**
+
    	• C:\Users\abc\Downloads\mage\mageai>pip install psycopg2 
  
  **(for postgresql connections)**
 
 # 6.NOTE:
 	• This error originates from a subprocess, and is likely not a problem with pip.
-## ERROR
+### ERROR
 	• Failed building wheel for pyzmq (installed microsoft build tools to microsoft visual c++ 14.0 or greater is required)
 	• Failed building wheel for pyarrow (pyproject.toml)
-## ERROR: 
+### ERROR: 
   	Could not build wheels for **pyarrow, pyzmq**, which is required to install pyproject.toml-based projects
 
 # 7.SOLUTION: 
+	
 	• C:\Users\abc\Downloads\mage\mageai>pip install streamlit==0.62.0 
  
  **(didn't work again -->Failed building wheel for pyarrow)**
@@ -97,13 +100,13 @@
 
 Building wheel for pyzmq (pyproject.toml)(again failed for both processes)
 	
- • **Re-install python 3.11.7(64bit)**
+ **Re-install python 3.11.7(64bit)**
 
  	• C:\Users\abc\Downloads\mage\mageai>
  
  **(Select a directory)** (follow from **4.To Activate Environment variables** and next steps)
 
-# ADDITIONAL DEPENDECIES IF NEEDED:
+# 8.ADDITIONAL DEPENDECIES IF NEEDED:
 • Install Jupiter Notebook inside VS Code
 • Need to Select Kernel (default is current virtual env)
  
